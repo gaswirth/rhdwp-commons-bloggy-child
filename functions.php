@@ -27,7 +27,7 @@ function rhd_theme_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'rhd_theme_enqueue_scripts' );
 function rhd_theme_enqueue_scripts() {
-	wp_enqueue_script( 'child-main', RHD_CHILD_DIR . '/js/child-main.js', array( 'jquery', 'rhd-main' ) );
+	wp_enqueue_script( 'child-main', RHD_CHILD_DIR . '/js/child-main.js', array( 'jquery', 'rhd-main', 'slidebars' ) );
 
     // Localize data for client-side use
 	global $wp_query;
@@ -38,8 +38,6 @@ function rhd_theme_enqueue_scripts() {
 		'img_dir' => RHD_CHILD_DIR . '/img',
 		'ajax_url' => admin_url( 'admin-ajax.php' ),
 		'query_vars' => json_encode( $wp_query->query ),
-		'inc_slidebars' => ( $theme_opts['rhd_include_slidebars'] == '1' ) ? true : false,
-		'inc_packery' => ( $theme_opts['rhd_include_packery'] == '1' ) ? true : false
 	);
 	wp_localize_script( 'child-main', 'wp_child_data', $data);
 }
