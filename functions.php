@@ -27,7 +27,7 @@ function rhd_theme_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'rhd_theme_enqueue_scripts' );
 function rhd_theme_enqueue_scripts() {
-	wp_enqueue_script( 'child-main', RHD_CHILD_DIR . '/js/child-main.js', array( 'jquery', 'rhd-main', 'slidebars' ) );
+	wp_enqueue_script( 'child-main', RHD_CHILD_DIR . '/js/child-main.js', array( 'jquery', 'rhd-main' ) );
 
     // Localize data for client-side use
 	global $wp_query;
