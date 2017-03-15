@@ -1,5 +1,5 @@
 /***
-* RHD Dev: Compiled at 11:24:32 PM on 09-07-2015
+* RHD Dev: Compiled at 11:58:54 AM on 15-03-2017
 ***/
 
 .unselectable {
@@ -138,11 +138,12 @@ a:visited {
 #current-projects .current-item {
   width: 48%;
   height: auto;
-  max-width: 25rem;
-  max-height: 25rem;
+  max-width: 383px;
+  max-height: 383px;
   position: relative;
   margin: 2% auto;
   transition: all 0.5s;
+  overflow: hidden;
 }
 #current-projects .current-item:nth-of-type(odd) {
   float: left;
@@ -244,6 +245,12 @@ a:visited {
    ========================================================================== */
 #post-22 .wp-image-476 {
   margin: 0;
+}
+/* ==========================================================================
+	Extras
+   ========================================================================== */
+.ngg-galleria-offscreen-seo-wrapper {
+  display: none;
 }
 /* ==========================================================================
 	Media Queries

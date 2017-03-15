@@ -1,8 +1,8 @@
 (function($){
 	$(document).ready(function(){
-		$(".projects-sub-menu-container").appendTo("li.menu-item-423");
+		$(".projects-sub-menu-container").appendTo("li.menu-item-677");
 
-		$(".menu-item-423 > a").click(function(e){
+		$(".menu-item-677 > a").click(function(e){
 			e.preventDefault();
 			$(this)
 				.siblings(".projects-sub-menu-container")
